@@ -1,0 +1,65 @@
+@media only screen and (min-width: 38rem){
+    #myButton{
+        display: none;
+    }
+
+    header h1{
+        text-align: center;
+        justify-content: center;
+    }
+
+    header img{
+        margin-left: 100%;
+
+    }
+    ul.menuLinks, ul.menuLinks.open li{
+        display: flex;
+        padding: 5px;
+        margin: 0px 50px;
+    }
+
+    ul.menuLinks li a {
+        display: flex;
+        padding: 0.5rem .5vw;
+        color: #fff;
+        text-decoration: none;
+        margin: 0px 30px;
+        border-radius: 5px;
+    }
+
+    ul.menuLinks a:hover{
+        background-color: rgba(255 , 255, 255,0.2);
+    }
+
+    nav {
+        grid-template-rows: 4fr;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+        margin: 10px 0;
+        padding: 10px 10px 10px 1px;
+        
+        
+    }
+
+    .link{
+        gap: 10px;
+        margin: 1px 0;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+    }
+
+    
+
+    .button-container button {
+        display: block; /* Stack buttons on small screens */
+        margin: 10px auto; /* Center each button */
+      }
+    
+}
