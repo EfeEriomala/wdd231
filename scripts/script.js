@@ -92,42 +92,41 @@ const courses = [
 // script.js
 const courseContainer = document.querySelector('.link');
 const buttons = document.querySelectorAll('.btn button');
+const totalCreditsContainer = document.createElement('div'); // Dedicated container for total credits
+totalCreditsContainer.className = 'total-credits';
+courseContainer.parentNode.insertBefore(totalCreditsContainer, courseContainer); // Insert before course container
 
 let currentCourses = courses;
 
 function displayCourses(courses) {
+    // Clear previous content
     courseContainer.innerHTML = '';
-    const totalCreditsElement = document.createElement('p');
-    const totalCredits = courses.reduce((total, course) => total + course.credits, 0);
-    // totalCreditsElement.textContent = `Total Credits: ${totalCredits}`;
-    // courseContainer.appendChild(totalCreditsElement);
+    totalCreditsContainer.innerHTML = '';
 
+    // Display total credits
+    const totalCredits = courses.reduce((total, course) => total + course.credits, 0);
+    totalCreditsContainer.textContent = `Total Credits: ${totalCredits}`;
+
+    // Display courses
     courses.forEach(course => {
         const courseCard = document.createElement('a');
         courseCard.href = '#';
+        courseCard.className = 'course-card'; // Add class for styling
         const button = document.createElement('button');
         button.textContent = `${course.subject}${course.number}`;
-        if (course.completed) {
-            button.style.background = '#008000'; 
-        }
+        button.style.background = course.completed ? '#008000' : ''; // Simplified color logic
         courseCard.appendChild(button);
         courseContainer.appendChild(courseCard);
     });
 }
 
 function filterCourses(subject) {
-    if (subject === 'All') {
-        currentCourses = courses;
-    } else {
-        currentCourses = courses.filter(course => course.subject === subject);
-    }
+    currentCourses = subject === 'All' ? courses : courses.filter(course => course.subject === subject);
     displayCourses(currentCourses);
 }
 
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        filterCourses(button.textContent);
-    });
+    button.addEventListener('click', () => filterCourses(button.textContent));
 });
 
 displayCourses(currentCourses);
