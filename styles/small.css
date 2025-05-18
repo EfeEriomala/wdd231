@@ -96,7 +96,7 @@
         background-color: white;
         border: 1px solid #ddd;
         border-radius: 10px;
-        box-shadow: #000;
+        box-shadow: 10px 10px rgb(167, 167, 167);
         margin: 10px;
     }
 
@@ -167,6 +167,7 @@
     }
 
     footer {
+        margin-top: 50px ;
         text-align: center;
         background-color: #4a6278;
         padding: 10px;
