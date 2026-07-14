@@ -1,0 +1,106 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 course home page for Eriomala Efeoghene with holder background information and courses completed">
+    <meta name="author" content="Eriomala Efeoghene">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <title>WDD231 Course home page</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+
+
+<body>
+    <!-- Header -->
+    <header>
+    <div class="nav-container">
+        <nav id="nav-bar" class="navigation">
+             <div class="logo">
+                <div class="fix">
+                    <img src="images/Efe Eriomala.jpeg" alt="Efe Eriomala">
+                    Efe Eriomala
+                </div>
+
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Chamber Project</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+
+                <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+            </div>
+           
+        </nav>
+
+    </div>
+    </header>
+
+    <div class="main-content">
+        <!-- Home Header -->
+        <div class="home-header">Home</div>
+
+        <!-- About and Photo Section -->
+        <div class="about-section">
+            <!-- About Me -->
+            <div class="about-box">
+                <h2>About Me</h2>
+                <p>My name is Efeoghene Eriomala. I am was born and raised in Nigeria. I am a member of the Church of Jesus
+                Christ
+                of latter-day saints. I am a singer with a strong passion for music. I also love to
+                watch movies on science fiction. I also have high
+                interest in software development, pursuing a degree at BYU Idaho through BYU Pathway-Worldwide. I am in my early
+                twenties and I hope to achieve so much more in my life.</p>
+            </div>
+            
+            <!-- Student Photo -->
+            <div class="photo-box">
+                <h2>Student Photo</h2>
+                <img src="images/Efe Eriomala.jpeg" alt=""> 
+            </div>
+        </div>
+
+        <!-- Web Certificate Courses -->
+        <div class="courses-section">
+            <div class="courses-header">Web Certificate Courses</div>
+            
+            <!-- Filters -->
+            <div class="course-filters">
+                <button class="course-btn active" onclick="filterCourses('all')">All</button>
+                <button class="course-btn" onclick="filterCourses('cse')">CSE</button>
+                <button class="course-btn" onclick="filterCourses('wdd')">WDD</button>
+            </div>
+            
+            <!-- Course Grid -->
+            <div class="course-grid" id="courseGrid">
+                <div class="course-item" data-category="wdd" style="background-color: green">WDD 130</div>
+                <div class="course-item" data-category="wdd" style="background-color: green">WDD 131</div>
+                <div class="course-item" data-category="cse" style="background-color: green" >CSE 210</div>
+                <div class="course-item" data-category="cse" style="background-color: green">CSE 110</div>
+                <div class="course-item" data-category="cse" style="background-color: green;">CSE 111</div>
+                <div class="course-item" data-category="wdd" style="background-color: red;">WDD 231</div>
+            </div>
+            
+            <div class="credits">
+                The total credits for course listed above is 6
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer> 
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt=""></a>
+            <a href="#" target="_blank"><img src="images/github.svg" alt=""></a>
+            <a href="#" target="_blank"><img src="images/twitter-x.svg" alt=""></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Efe Eriomala • Delta, Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
