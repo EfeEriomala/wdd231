@@ -1,0 +1,57 @@
+   @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+                text-align: center;
+            }
+
+            .photo-box img {
+            display: flex;
+            padding: 10px 20px;
+            height: 80vh;
+            }
+
+            .course-filters {
+                display: flex;
+                justify-content: center;
+                
+            }
+            .hamburger {
+                display: block;
+            }
+
+            .navigation ul {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background-color: #0243bb;
+                padding: 1rem 0;
+                text-align: center;
+                gap: 0;
+            }
+
+            .navigation.show ul {
+                display: flex;
+            }
+
+            .navigation ul li {
+                padding: 1rem 0;
+                border-top: 1px solid rgba(255,255,255,0.2);
+            }
+
+            
+
+            .logo{
+                justify-content: space-around;
+            }
+
+           
+            
+        }
