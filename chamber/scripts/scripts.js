@@ -1,4 +1,4 @@
-const url = 'members.json';
+const url = 'data/members.json';
 const membersContainer = document.querySelector('#members');
 
 async function getMembers() {
@@ -40,7 +40,7 @@ const displayMembers = (members) => {
         website.href = member.website;
         website.target = '_blank';
 
-        membership.textContent = `Membership: ${member.membership}`;
+        membership.textContent = `Membership: ${member.membership}.color:green`;
 
         card.appendChild(name);
         card.appendChild(logo);
@@ -73,3 +73,4 @@ function showList() {
 	display.classList.add("list");
 	display.classList.remove("grid");
 }
+

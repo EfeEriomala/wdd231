@@ -29,8 +29,8 @@ header {
 
 
 .logo img {
-    height: 40px;
-    width: 40px;
+    height: 24px;
+    width: 24px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -57,16 +57,22 @@ header {
 .navigation ul {
     display: flex;
     list-style: none;
-    gap: 1rem;
+    gap: 2rem;
     background: transparent;
 }
 
+nav {
+    position: relative;
+    z-index: 1000;
+}
 
 .nav-container{
     justify-content: space-around;
-    padding:10px  1px;
+    padding:15px  1px;
     
 }
+
+
 .navigation a {
     color: white;
     text-decoration: none;
@@ -120,10 +126,7 @@ nav a.active:hover {
     transition: ease-in 0.4s;            
 }
 
-main{
-    padding: -1rem -2rem;
-}
-        
+
 .menu {
     padding: -1rem;
     text-align: center;
@@ -145,6 +148,65 @@ main{
     padding-bottom: 20px;
 }
 
+.hero{
+    background-image: url('../images/download.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+.hero img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    background: linear-gradient(340deg,
+        #0057b3e0 10%,
+        #ffffffcc 100%
+    );
+} 
+.hero-content h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.hero-content p {
+    margin-bottom: 1.5rem;
+}
+
+.hero-content a{
+    font-size: 1.2rem;
+   
+    background: linear-gradient(340deg,
+        #0057b3e0 10%,
+        #ffffffcc 100%
+    );
+    color: white;
+    padding: 10px 50px;
+    margin-top: 20px;
+    border-radius:20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.hero-content a:hover{
+     background-color: #0056b3;
+    transition: 0 0 8s ease-in-out;
+}
 
 .menu button:hover {
     background: #ddd;
@@ -185,7 +247,7 @@ h1 {
     section {
         border: 5px solid rgba(255, 68, 68, 0.1);
         padding: 0.5rem;
-        background-color: #ddd;
+        background-color: transparent;
     }
 
 section a {
@@ -260,7 +322,49 @@ section a {
 
 img {
 	width: auto;
-	height: 75px;
+	height: auto;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    color: #0056b3;
+}
+
+.card h3 {
+    margin-bottom: .5rem;
+}
+.card p {
+    line-height: 1.6;
+    color: #333;
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
 }
 
 .social-icons {
@@ -304,7 +408,12 @@ img {
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 1.5rem;
             padding: 1rem 2rem;
-            max-width: 1400px;
+            width: 100%;
             margin: 0 auto;
         }
+
+
+    
+ 
+
         
