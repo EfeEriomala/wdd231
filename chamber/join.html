@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD231 course directory page for Chamber of Commers project">
+    <meta name="author" content="Eriomala Efeoghene">
+    <meta property="og:title" content="Wpowers Chamber of Commers Project">
+    <meta property="og:description" content="Official website of the Wpowers Chamber of Commerce. Discover local businesses, events, and community resources.">
+    <meta property="og:image" content="images/favicon.co">
+    <meta property="og:url" content="">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAADAgIA/65XAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAE
+    REREREREREBEREREREAAAAREREREQEQAAERERERARAAABEQAAAAAAAAARAREBERAAAAEBEQEREAAAAAARAREQAAEREAABERAAAQAQEREREAABABABEREQAAEREAAREREREAAAAAEREQAQAAAAABERABAAAAAAAREREAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+    AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" rel="icon" type="image/x-icon">
+    
+    <title>Join Chamber Of Commers</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+   <script src="scripts/timestamp.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+    <div class="nav-container">     
+        <nav id="nav-bar" class="navigation">
+             <div class="logo">
+                <div class="fix">
+                    <img src="images/favicon.ico" alt="logo">
+                    Wpowers
+                    Chamber Of Commers
+                </div>
+
+                <ul>
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="join.html" class="active">Join</a></li>
+                    <li><a href="#">Discover</a></li>
+                </ul>
+
+                <button id="ham-btn" class="hamburger" aria-label="Menu"></button>
+            </div>
+           
+        </nav>
+
+    </div>
+    </header>
+
+    <main>
+        
+            <h1>Join The Chamber</h1    >
+
+            <div class="join-layout">
+                <form method="get" action="Thankyou.html">
+                    <label>
+                    First Name: 
+                    <input type="text"
+                            name="FirstName"
+                            title="Applicant first name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name: 
+                        <input type="text"
+                                name="LastName"
+                                title="Applicant last name"
+                                autocomplete="given-name"
+                                required>
+                    </label>
+
+                    <label>
+                        Email: 
+                        <input type="email"
+                                name="email"
+                                title="Applicant email address"
+                                autocomplete="email"
+                                placeholder="example@gmail.com"
+                                required>
+                    </label>
+
+                    <label>
+                        Phone Number: 
+                        <input type="tel"
+                                name="phone"
+                                title="Applicant phone number"
+                                autocomplete="tel"
+                                required>
+                    </label>
+
+                    <label>
+                        Business/Organization name: 
+                        <input type="text"
+                                name="Organization"
+                                title="Applicant organization name"
+                                autocomplete="organization"
+                                required>
+                    </label>
+
+                    <label>
+                        <select name="membership" required>
+                            <option value=""> Select Membership Plan</option>
+                            <option value="free"> Free Membership</option>
+                            <option value="bronze">Bronze Membership </option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="Gold">Gold Membership</option>
+                        </select>       
+                    </label>
+
+                    <label>
+                        Organization Description
+                        <textarea name="description" title="Organization description">
+                        </textarea>
+                    </label>
+
+                    <input type="hidden"
+                            name="timestamp"
+                            id="timestamp"
+                    >
+
+                    <input type="submit"
+                            value="submit Applicantion"
+                    >
+                </form>
+
+                <section class="membership-card">
+                     <div class="join-card">
+                        <h2>Free Membership</h2>
+                        <p>Free Mmeber for Non porfit organizations</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div class="join-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Basic Business member benefits</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div class="join-card">
+                        <h3>Silver Membership</h3>
+                        <p>More Advertising and event benefits.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                    <div class="join-card">
+                        <h3>Gold Membership</h3>
+                        <p>Premium business opportunities</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </section>
+
+
+                
+            </div>
+
+           
+        
+
+
+        <dialog id="frModal">
+
+        </dialog>
+    </main>
+
+    <footer> 
+        <div class="left">
+            <p>Wpowers Chamber of Commers</p>
+            <p>1 Dems De Rules Warri</p>
+            <p>Delta State, Nigeria</p>
+            <p>eeriomala@gmail.com</p>
+            <p>(234)8108140913</p>        
+        </div>
+
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="Iinkedin image"></a>
+            <a href="#" target="_blank"><img src="images/github.svg" alt="Github image"></a>
+            <a href="#" target="_blank"><img src="images/twitter-x.svg" alt="Twitter image"></a>
+        </div>
+
+        <div class="right">
+            <p>WDD231 Class Project</p>
+            <p>Efe Eriomala</p>
+            <p>&copy; <span id="currentyear"></span> Wpowers Chamber of Commers</p>
+            <p id="lastModified"></p>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>
