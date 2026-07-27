@@ -80,7 +80,18 @@
 .card h3 {
     margin-bottom: .5rem;
 }
-           
+     
+.join-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.membership-cards{
+
+order:2;
+
+}
             
         }
 
