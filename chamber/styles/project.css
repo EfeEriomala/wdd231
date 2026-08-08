@@ -28,12 +28,16 @@
             border-left: 6px solid var(--secondary);
             border-radius: 8px;
         }
-
+        image{
+            width: 50%;
+        }
+        .mobile img{
+            height: 2vh;;
+        }
         .wireframe {
             background: #fff;
             border: 2px solid #000;
             padding: 15px;
             font-family: monospace;
-            white-space: pre;
-            overflow-x: auto;
-        }
+            
+        }   

@@ -170,3 +170,11 @@ order:2;
 
 
 }
+
+
+@media only screen and (min-width:64rem){
+    #allplaces{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

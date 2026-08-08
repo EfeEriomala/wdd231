@@ -1,0 +1,108 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#allplaces  div{
+    margin: 1rem 8px;
+    border: 1.5px solid #0243bb;
+    background-color: #eee;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-areas: 
+    "names"
+    "photograph"
+    "description"
+    "location";
+   animation: fly-up 2s ease;
+}
+
+@keyframes fly-up {
+
+from {
+
+opacity:0;
+margin-top:50px;
+
+}
+
+
+to {
+
+opacity:1;
+margin-left:0;
+
+}
+
+}
+#allplaces div:hover {
+    transform: scale(1.03);
+
+}
+
+#allplaces div h2{
+    margin:1rem 10px;
+    grid-area: names;
+}
+
+#allplaces div img{
+    width: 100%;
+    height: 220px;
+    grid-area: photograph;
+    border-top-left-radius: 10px;
+}
+
+#allplaces div p{
+    margin: 1rem 10px;
+    grid-area:description;
+}
+#allplaces div address{
+    margin: 1rem 10px;
+    grid-area: location;
+
+}
+
+/* #allplaces {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#allplaces div {
+    background-color: #f8f9fa;
+    border-left: 6px solid #0077b6;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+
+
+#allplaces img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#allplaces h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+    color: #023e8a;
+}
+
+#allplaces address {
+    font-style: normal;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+#allplaces p {
+    color: #444;
+    line-height: 1.6;
+} */

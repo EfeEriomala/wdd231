@@ -10,6 +10,7 @@ body {
     color: #333;
     background-color: #f4f4f4;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
     }
         
 header {
@@ -180,6 +181,7 @@ nav a.active:hover {
     min-height: 100vh;
     position: relative;
     z-index: 1;
+    
 }
 
 .hero img{
@@ -203,6 +205,7 @@ nav a.active:hover {
         #ffffffcc 100%
     );
     animation: fly-up 2s ease;
+    
 } 
 .hero-content h1 {
     margin-bottom: 1rem;
@@ -290,14 +293,23 @@ section a {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1rem;
     padding: 1rem;
+    
     animation: fly-up 2s ease;
 }
+
+
 
 .grid section {
     background-color: #ddd;
     text-align: center;
     padding: 1rem;
-    border: 1px solid #bbb;
+    border: 1.5px solid #0056b3;
+    transition: all 0.3s ease;
+}
+
+.grid section:hover {
+    transform: scale(1.03);
+
 }
 
 .grid section img {
@@ -350,12 +362,16 @@ img {
 	width: auto;
 	height: auto;
 }
-
+#graphic{
+    background-color: #2389f7;
+    border-radius: 50%;
+}
 .info-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
     padding: 1rem;
+    
 }
 
 .card {
@@ -363,6 +379,12 @@ img {
     border-radius: 10px;
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border: 1.5px solid #0056b3;
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.03);
+
 }
 
 .card h2 {
@@ -501,6 +523,9 @@ input[type="submit"]:hover{
     font-size: 1.1rem;
 }
 
+
+
+
 .social-icons img{
     height: 120%;
     background-color: white;
@@ -533,7 +558,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
-    padding: 1rem 2rem;
+     padding: 1rem 0rem;
     width: 100%;
     margin: 0 auto;
 }
