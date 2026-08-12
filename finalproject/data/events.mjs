@@ -33,7 +33,7 @@ export const events = [
     "price": "Free",
     "organizer": "Warri Tech Community",
     "attendees": 300,
-    "image": "../images/images (1).jpg",
+    "image": "../images/newimages.jpg",
     "description": "Networking, coding workshops, and startup showcases."
   },
   {
