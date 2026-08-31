@@ -425,7 +425,7 @@ to {
 .card img{
     background-color: var(--main-color);
     border-radius: 50%;
-    width: 100%;
+    width: 45%;
 }
 .slipt-spotlight{
     border: 1px solid  #e7e5e5;
